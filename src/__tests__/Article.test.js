@@ -46,7 +46,8 @@ test("uses a default value for the date if no date is passed as a prop", () => {
       preview={"Setting up the building blocks of your site"}
     />
   );
-  const small = screen.queryByText(/January 1, 1970/);
+ 
+  const small = screen.getByText("January 1, 1970");
   expect(small).toBeInTheDocument();
 });
 
