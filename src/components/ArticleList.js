@@ -6,7 +6,7 @@ const ArticleList = ({posts}) => {
  <main>
     {posts.map((posts, index) => (
         < Article key={index} title={posts.title} date={posts.date} preview={posts.preview}/>
-    ))};
+    ))}
  </main>
  );
 
